@@ -1,0 +1,9 @@
+{
+  "name": "solid-linked-data-workshops-hands-on-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Moeriki/solid-linked-data-workshops-hands-on-exercises.git",
+  "author": "Dieter Luypaert <dieterluypaert@gmail.com>",
+  "license": "MIT",
+  "type": "module"
+}
