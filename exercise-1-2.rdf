@@ -1,0 +1,11 @@
+<https://new-u.tech/gwen/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/familyName> "Stacy" .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/givenName> "Gwendolyne" .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/homepage> <https://new-u.tech/gwen> .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/img> <https://static.wikia.nocookie.net/marveldatabase/images/e/e7/Symbiote_Spider-Man_Vol_1_1_Artgerm_Virgin_Variant.jpg/revision/latest/scale-to-width-down/856?cb=20190125221031> .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/mbox> "gwen@new-u.tech" .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/member> _:b0 .
+<https://new-u.tech/gwen/#me> <http://xmlns.com/foaf/0.1/nick> "Gwen" .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organisation> .
+_:b0 <http://xmlns.com/foaf/0.1/homepage> <https://new-u.tech> .
+_:b0 <http://xmlns.com/foaf/0.1/name> "New U Technologies" .

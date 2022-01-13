@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/jsonld",
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@id": "https://moeriki.com/#me",
+  "@type": "foaf:Person",
+  "foaf:familyName": "Luypaert",
+  "foaf:givenName": "Dieter",
+  "foaf:homepage": {
+    "@id": "https://moeriki.com"
+  },
+  "foaf:img": {
+    "@id": "https://en.gravatar.com/userimage/48541093/bc18c80534eb48b08c347763b17ed96c.jpeg"
+  },
+  "foaf:mbox": "moeriki@hey.com",
+  "foaf:member": {
+    "@type": "foaf:organisation",
+    "foaf:name": "foursevens",
+    "foaf:homepage": {
+      "@id": "https://foursevens.be"
+    }
+  },
+  "foaf:nick": "moeriki"
+}

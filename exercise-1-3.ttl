@@ -1,0 +1,20 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<https://moeriki.com/#me> a foaf:Person, foaf:Agent;
+                          foaf:givenName "Dieter";
+                          foaf:familyName "Luypaert";
+                          foaf:homepage <https://moeriki.com>;
+                          foaf:img <https://en.gravatar.com/userimage/48541093/bc18c80534eb48b08c347763b17ed96c.jpeg>;
+                          foaf:mbox "moeriki@hey.com";
+                          foaf:nick "moeriki";
+                          .
+
+[
+  a foaf:Organisation;
+  foaf:homepage <https://foursevens.be>;
+  foaf:member (
+    <https://moeriki.com/#me>
+  );
+  foaf:name "foursevens";
+].
