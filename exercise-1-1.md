@@ -3,7 +3,7 @@
 Create a JSON-LD representation of the person data below
 using the [FOAF Vocabulary](http://xmlns.com/foaf/spec/).
 
-Tip: you can use https://json-ld.org/playground/ to validate and 
+Tip: you can use https://json-ld.org/playground/ to validate and
 inspect your JSON-LD.
 
 ## Person data
