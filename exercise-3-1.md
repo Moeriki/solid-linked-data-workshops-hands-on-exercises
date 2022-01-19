@@ -33,6 +33,12 @@ id,firstname,lastname,name,nickname,org-id
 }
 ```
 
+## Resources
+
+- https://rml.io/yarrrml/tutorial/getting-started/#how-to-link-two-entities
+- https://rml.io/yarrrml/matey/#
+- http://xmlns.com/foaf/spec/
+
 ## Solution
 
 ```yaml
