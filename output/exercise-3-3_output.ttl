@@ -1,0 +1,36 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://example.com/0-Gwen> a foaf:Person;
+  <e:member> <http://example.com/new-u-New%20U%20Technologies>;
+  foaf:familyName "Stacy";
+  foaf:givenName "Gwendolyne";
+  foaf:name "";
+  foaf:nick "Gwen" .
+
+<http://example.com/1-Black%20Panther> a foaf:Person;
+  <e:member> <http://example.com/avngrs-Avengers>;
+  foaf:familyName "";
+  foaf:givenName "";
+  foaf:name "T'Challa";
+  foaf:nick "Black Panther" .
+
+<http://example.com/2-Scarlet%20Witch> a foaf:Person;
+  <e:member> <http://example.com/avngrs-Avengers>;
+  foaf:familyName "Maximoff";
+  foaf:givenName "Wanda";
+  foaf:name "";
+  foaf:nick "Scarlet Witch" .
+
+<http://example.com/3-> a foaf:Person;
+  <e:member> <http://example.com/new-u-New%20U%20Technologies>;
+  foaf:familyName "Clarkson";
+  foaf:givenName "Rita";
+  foaf:name "";
+  foaf:nick "" .
+
+<http://example.com/avngrs-Avengers> a foaf:Organisation;
+  foaf:name "Avengers" .
+
+<http://example.com/new-u-New%20U%20Technologies> a foaf:Organisation;
+  foaf:name "New U Technologies" .
