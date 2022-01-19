@@ -66,14 +66,11 @@ mappings:
     foaf:givenName "Gwendolyne";
     foaf:familyName "Stacy";
     foaf:nick "Gwen";
-    <e:member> <http://example.com/new-u-New%20U%20Technologies>.
 <http://example.com/1-Black%20Panther> a foaf:Person;
     foaf:name "T'Challa";
     foaf:nick "Black Panther";
-    <e:member> <http://example.com/avngrs-Avengers>.
 <http://example.com/2-Scarlet%20Witch> a foaf:Person;
     foaf:givenName "Wanda";
     foaf:familyName "Maximoff";
     foaf:nick "Scarlet Witch";
-    <e:member> <http://example.com/avngrs-Avengers>.
 ```
