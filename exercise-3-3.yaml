@@ -1,0 +1,29 @@
+prefixes:
+  foaf: http://xmlns.com/foaf/0.1/
+
+mappings:
+  person:
+    sources:
+      - ['people.csv~csv']
+    s: http://example.com/$(id)-$(nickname)
+    po:
+      - [a, foaf:Person]
+      - [foaf:givenName, $(firstname)]
+      - [foaf:familyName, $(lastname)]
+      - [foaf:name, $(name)]
+      - [foaf:nick, $(nickname)]
+      - p: e:member
+        o:
+          mapping: organisation
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(org-id), s]
+              - [str2, $(id), o]
+  organisation:
+    sources:
+      - ['organisations.json~jsonpath', '$.organisations[*]']
+    s: http://example.com/$(id)-$(name)
+    po:
+      - [a, foaf:Organisation]
+      - [foaf:name, $(name)]

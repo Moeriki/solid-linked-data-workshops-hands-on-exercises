@@ -1,0 +1,41 @@
+name: Exercise 3-3
+
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    env:
+      GLOBAL_PATTERN: '*.yaml'
+      SERIALIZATION_FORMAT: turtle
+      OUTPUT_DIRECTORY: output
+      CONVERT_ALL: true
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Converts YARRRML rules to RDF
+        uses: RMLio/rml-action@v1.0.0
+        with:
+          # the global pattern for all YARRRML mappings
+          global-pattern: ${{ env.GLOBAL_PATTERN }}
+          # serialization format is optional; default - "nquads"
+          serialization-format: ${{ env.SERIALIZATION_FORMAT }}
+          # the name of the directory where all the output files will be stored
+          output-directory: ${{ env.OUTPUT_DIRECTORY }}
+          # convert-all is optional; default - "false"
+          # if convert-all is "true", the action will always convert all the files to
+          # RDF based on the yarrrml-files provided by `GLOBAL_PATTERN`, even if no
+          # changes were detected
+          convert-all: ${{ env.CONVERT_ALL }}
+
+      - name: Commit and push the output
+        run: |
+          git config --global user.name 'moeriki'
+          git config --global user.email 'moeriki@hey.com'
+          git add .
+          set +e
+          git status | grep "nothing to commit, working tree clean"
+          if [ $? -eq 0 ]; then set -e; echo "INFO: No changes since last run"; else set -e; \
+            git commit -m "🗃️ convert to RDF with Github Actions"; git push; fi
+        shell: bash
