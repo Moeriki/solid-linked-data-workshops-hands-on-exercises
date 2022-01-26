@@ -14,7 +14,7 @@ Tip: the following query selects all predicates and corresponding objects that a
 ```sparql
 PREFIX wd: <http://www.wikidata.org/entity/>
 
-select * where {
- wd:Q51730 ?p ?o.
+SELECT ?student WHERE {
+ wd:Q51730 wdt:P802 ?student.
 }
 ```
