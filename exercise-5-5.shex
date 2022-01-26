@@ -1,0 +1,2 @@
+{FOCUS a foaf:Organisation}@:OrganisationShape,
+{FOCUS a foaf:Person}@:PersonShape

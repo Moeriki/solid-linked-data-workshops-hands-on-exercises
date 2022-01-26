@@ -1,0 +1,33 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ex:    <http://example.com/> .
+
+ex:OrganisationShape
+    a              sh:NodeShape ;
+    sh:targetClass foaf:Organisation ;
+    sh:property    ex:requiredHomepage ;
+    sh:property    ex:requiredMember ;
+    sh:property    ex:requiredName .
+
+ex:requiredHomepage
+    a           sh:PropertyShape ;
+    rdfs:label  "homepage"@en ;
+    sh:path     foaf:homepage ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 .
+
+ex:requiredMember
+    a           sh:PropertyShape ;
+    rdfs:label  "member"@en ;
+    sh:path     foaf:member ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 .
+
+ex:requiredName
+    a           sh:PropertyShape ;
+    rdfs:label  "name"@en ;
+    sh:path     foaf:name ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 .

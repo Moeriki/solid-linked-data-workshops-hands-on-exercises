@@ -8,13 +8,12 @@
                           foaf:img <https://en.gravatar.com/userimage/48541093/bc18c80534eb48b08c347763b17ed96c.jpeg>;
                           foaf:mbox "moeriki@hey.com";
                           foaf:nick "moeriki";
+                          foaf:organisation <https://foursevens.be>;
                           .
 
 [
   a foaf:Organisation;
   foaf:homepage <https://foursevens.be>;
-  foaf:member (
-    <https://moeriki.com/#me>
-  );
+  foaf:member <https://moeriki.com/#me>;
   foaf:name "foursevens";
 ].

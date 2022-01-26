@@ -1,0 +1,57 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ex:    <http://example.com/> .
+
+ex:PersonShape
+    a              sh:NodeShape ;
+    sh:targetClass foaf:Person ;
+    sh:property    ex:requiredFamilyName ;
+    sh:property    ex:requiredGivenName ;
+    sh:property    ex:requiredHomepage ;
+    sh:property    ex:requiredImg ;
+    sh:property    ex:requiredMbox ;
+    sh:property    ex:requiredNick .
+
+ex:requiredFamilyName
+    a           sh:PropertyShape ;
+    rdfs:label  "family name"@en ;
+    sh:path     foaf:familyName ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 .
+
+ex:requiredGivenName
+    a           sh:PropertyShape ;
+    rdfs:label  "given name"@en ;
+    sh:path     foaf:givenName ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 .
+
+ex:requiredHomepage
+    a           sh:PropertyShape ;
+    rdfs:label  "homepage"@en ;
+    sh:path     foaf:homepage ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 .
+
+ex:requiredImg
+    a           sh:PropertyShape ;
+    rdfs:label  "img"@en ;
+    sh:path     foaf:img ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 .
+
+ex:requiredMbox
+    a           sh:PropertyShape ;
+    rdfs:label  "email"@en ;
+    sh:path     foaf:mbox ;
+    sh:nodeKind sh:IRI ;
+    sh:minCount 1 .
+
+ex:requiredNick
+    a           sh:PropertyShape ;
+    rdfs:label  "nick name"@en ;
+    sh:path     foaf:nick ;
+    sh:nodeKind sh:Literal ;
+    sh:minCount 1 .
