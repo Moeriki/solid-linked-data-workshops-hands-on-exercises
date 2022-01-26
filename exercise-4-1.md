@@ -18,4 +18,3 @@ select * where {
  wd:Q51730 ?p ?o.
 }
 ```
-

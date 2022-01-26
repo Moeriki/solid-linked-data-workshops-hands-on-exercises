@@ -6,9 +6,15 @@
   "author": "Dieter Luypaert <dieterluypaert@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "format": "prettier -w ."
+  },
   "dependencies": {
     "fastify": "^3.25.3",
     "jsonld": "^5.2.0",
     "n3": "^1.12.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
   }
 }

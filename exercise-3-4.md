@@ -12,7 +12,7 @@ All tasks are using a single resource at <http://localhost:8080>`.
 
 1. Find out what the default content type is of the resource.
 2. Request for the resource in the following content types:
-     - JSON-LD
-     - HTML
+   - JSON-LD
+   - HTML
 3. What responses did you get and why?
-You can look into the server code if needed.
+   You can look into the server code if needed.
